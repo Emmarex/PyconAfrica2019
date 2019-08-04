@@ -1,5 +1,11 @@
 import pandas as pd
 
+import jwt
+
+def decode_google_token(token_string):
+    decoded_result = jwt.decode(token_string, verify=False, algorithms='RS256')
+    return decoded_result
+
 def get_conference_schedule(current_date):
     try:
         conference_file_columns = [

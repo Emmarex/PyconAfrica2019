@@ -9,22 +9,26 @@ flask_app = Flask(__name__)
 CONFERENCE_START_DATE = datetime.strptime('2019-08-06','%Y-%m-%d').date()
 CONFERENCE_END_DATE = datetime.strptime('2019-08-10','%Y-%m-%d').date()
 
-CONFERENCE_DATE = datetime.strptime('2019-08-06','%Y-%m-%d').date()
+# CONFERENCE_DATE = datetime.strptime('2019-08-08','%Y-%m-%d').date()
 
+GOOGLE_ASSISTANT_WELCOME_INTENT = 'welcome_intent_assistant'
 CONFERENCE_SCHEDULE_INTENT = 'conference_Schedule'
 
 @flask_app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
+        print(f'\n\n\n{json.loads(request.data.decode("utf-8"))}\n\n\n')
         dialogflow_request = DialogflowRequest(request.data)
         dialogflow_intent = dialogflow_request.get_intent_displayName()
-        if dialogflow_intent == "welcome_intent":
-            dialogflow_response = DialogflowResponse("Welcome to my test dialogflow webhook")
-            dialogflow_response.add(SimpleResponse("Welcome to my test dialogflow webhook","Welcome to my test dialogflow webhook"))
+        if dialogflow_intent == GOOGLE_ASSISTANT_WELCOME_INTENT:
+            user_data = helper.decode_google_token(dialogflow_request.get_user_token())
+            dialogflow_response = DialogflowResponse()
+            response_text = f"Hello {user_data['given_name']}. I am Pycon AfriBot, I was built for a demo @ PyconAfrica 2019."
+            dialogflow_response.add(SimpleResponse(response_text,response_text))
+            dialogflow_response.add(Suggestions(suggestion_titles=['About PyconAfrica','Conference Schedule']))
             response = flask_app.response_class(response=dialogflow_response.get_final_response(),mimetype='application/json')
         elif dialogflow_intent == CONFERENCE_SCHEDULE_INTENT:
-            # todays_date = date.today()
-            todays_date = CONFERENCE_DATE
+            todays_date = date.today()
             if todays_date >= CONFERENCE_START_DATE and todays_date <= CONFERENCE_END_DATE:
                 is_successful, todays_schedule = helper.get_conference_schedule(todays_date)
                 if is_successful:
@@ -48,16 +52,11 @@ def index():
                     dialogflow_response.add(LinkOutSuggestion("See Schedule Online","https://africa.pycon.org/schedule/"))
             response = flask_app.response_class(response=dialogflow_response.get_final_response(),mimetype='application/json')
         else:
-            # table_rows = [
-            #     TableCell(cell_text=['Text 1','Text 2','Text 3']),
-            #     TableCell(cell_text=['Text 12','Text 22','Text 32'])
-            # ]
-            # dialogflow_response.add(Table(rows=table_rows,columns=['Header 1','Header 2','Header 3'],add_dividers=True))
-            dialogflow_response = DialogflowResponse()
-            dialogflow_response.add(SimpleResponse("Welcome to my test dialogflow webhook","Welcome to my test dialogflow webhook"))
-            dialogflow_response.add(Suggestions(["About","Sync","More info"]))
-            response = jsonify(dialogflow_response.get_final_response())
-            print(dialogflow_response.get_final_response())
+            return_data = {
+                'error' : 1,
+                'message' : 'Invalid intent'
+            }
+            response = flask_app.response_class(response=json.dumps(return_data),mimetype='application/json')
         return response
     else:
         return_data = {
