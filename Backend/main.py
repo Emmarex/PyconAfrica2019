@@ -17,7 +17,7 @@ CONFERENCE_SCHEDULE_INTENT = 'conference_Schedule'
 @flask_app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        print(f'\n\n\n{json.loads(request.data.decode("utf-8"))}\n\n\n')
+        # print(f'\n\n\n{json.loads(request.data.decode("utf-8"))}\n\n\n')
         dialogflow_request = DialogflowRequest(request.data)
         dialogflow_intent = dialogflow_request.get_intent_displayName()
         if dialogflow_intent == GOOGLE_ASSISTANT_WELCOME_INTENT:
@@ -25,6 +25,7 @@ def index():
             dialogflow_response = DialogflowResponse()
             response_text = f"Hello {user_data['given_name']}. I am Pycon AfriBot, I was built for a demo @ PyconAfrica 2019."
             dialogflow_response.add(SimpleResponse(response_text,response_text))
+            dialogflow_response.add(SimpleResponse("How can I be of help today ?","How can I be of help today ?"))
             dialogflow_response.add(Suggestions(suggestion_titles=['About PyconAfrica','Conference Schedule']))
             response = flask_app.response_class(response=dialogflow_response.get_final_response(),mimetype='application/json')
         elif dialogflow_intent == CONFERENCE_SCHEDULE_INTENT:
