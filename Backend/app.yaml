@@ -1,0 +1,6 @@
+runtime: python37
+entrypoint: gunicorn main:flask_app
+
+handlers:
+- url: /.*
+  script: auto
