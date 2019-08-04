@@ -28,7 +28,7 @@ def index():
             if todays_date >= CONFERENCE_START_DATE and todays_date <= CONFERENCE_END_DATE:
                 is_successful, todays_schedule = helper.get_conference_schedule(todays_date)
                 if is_successful:
-                    simple_text = f"Here is the schedule for today {todays_date.strftime('%B %d')}"
+                    simple_text = f"Here is the schedule for today {todays_date.strftime('%a %B %d')}"
                     dialogflow_response = DialogflowResponse(simple_text)
                     dialogflow_response.add(SimpleResponse(simple_text,simple_text))
                     table_rows = []

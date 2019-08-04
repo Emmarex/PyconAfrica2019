@@ -1,4 +1,46 @@
 Date,Time,Talk 1,Talk 2
 2019-08-06,8:30,Registration,Registration
-2019-08-06,9:00,Beginners day: Installation parties for Django Girls and new Python users,"International visitors' tour of Accra
-Visit the sights and markets of Accra in the company of the Ghanaian conference hosts."
+2019-08-06,9:00,Beginners day,International visitor’s tour of Accra
+2019-08-07,8:30,Registration,Registration
+2019-08-07,9:00,Django Girls (Registration Required),Workshops and Tutorials
+2019-08-08,8:30,Registration,Registration
+2019-08-08,9:00,Marlene Mhangami - Welcome to Pycon Africa,Marlene Mhangami - Welcome to Pycon Africa
+2019-08-08,9:15,Moustapha Cisse - Keynote,Moustapha Cisse - Keynote
+2019-08-08,10:00,Meili Triantafyllidi - Lessons learned from 6 years in Pyladies Berlin,Kelechi Ogueji - Aligning word vectors of Nigerian languages for better translation
+2019-08-08,10:30,Break,Break
+2019-08-08,11:00,Mfon Eti-mfon - Catching Bugs Early: The joys of static Typing in Python,Aaron Basset - Can’t Get you out of my head
+2019-08-08,11:30,Dustin Haffner - Currying in Python,"Adeshola Afolabi - PyRescue (Good Products, Bad Products … How we used A/B testing to make advertising precise in Nigeria)"
+2019-08-08,12:00,Felipe de Morais - Afropython: Empowering black people using Python in Brazil,Candy Tricia Kholiwe - Web Virtual Reality and A-frame
+2019-08-08,13:00,Lunch,Lunch
+2019-08-08,14:00,Jessica Upani - Is this Python thing really working ?,Jessica Upani - Is this Python thing really working ?
+2019-08-08,14:30,Kelvin Oyana - Bridging the talent gap between Python communities and industry,Tairu Oluwafemi - Chatbots on Steroids 
+2019-08-08,15:00,Maurizio Boscaini - Pygame in High Schools,Aseda Owusua Addai-Deseh - A Reintroduction to Data Science
+2019-08-08,15:30,Chiamaka Nwolisa - Musings of a Frontend Developer: Building APIs with Python,Jef Colbi : Ninagram - How I mixed Django and Telegram in one soup !
+2019-08-08,16:00,Break,Break
+2019-08-08,16:30,None,Eyitemi “insaida” Egbejule - The Jinja Ninja: Exploiting Jinja Template Engine for Code Execution 
+2019-08-08,17:00,Panel,Panel
+2019-08-08,17:30,Anna Makarudze - Keynote,Anna Makarudze - Keynote
+2019-08-08,18:15,Lightning talks,Lightning talks
+2019-08-08,18:45,Close,Close
+2019-08-09,8:30,Registration,Registration
+2019-08-09,9:00,Marlene Mhangami - Introduction,Marlene Mhangami - Introduction
+2019-08-09,9:15,Ewa Jodlowska - Keynote,Ewa Jodlowska - Keynote
+2019-08-09,10:00,Flavio Percoco - Inheriting code and I don't mean classes,Sherin Thomas - The missing pieces of a complete deep learning workflow
+2019-08-09,10:30, Break, Break
+2019-08-09,11:00, Aaron Yankey - Python Side of Vim, Kwadwo Agyapon-Ntra - Deep Learning on Steroids - Using Transfer Learning to Accelerate Model Performance
+2019-08-09,11:30, Kuda Siziva - How to avoid burnout, Adeyinka Adegbenro - Accessibility Testing: Making Information and Software available to all and sundry
+2019-08-09,12:00, Loek van Gent - Make 'em pay: Connecting multiple African payment service providers, None
+2019-08-09,12:30, Adeleke Idowu - Test Driven Data Science, None
+2019-08-09,13:00, Lunch, Lunch
+2019-08-09,14:00," Daniele Procida - The world's cheapest, simplest plotter",None
+2019-08-09,14:30, Larry Ndumbe - Your Journey to the Unknown: A tale of how I debunk new codebases, Funsho Olaniyi - Fun with Functional Programming
+2019-08-09,15:00, Nicholas Del Grosso - Unraveling the Spaghetti: Tips for Refactoring Your Code, Eyitayo Alimi - Going Beyond The Codes : Building inclusive technical Communities
+2019-08-09,15:30, Ngazetungue Muhue - How Python Rise in Nambia, Prudence Attablayo - Python for Cybersecurity
+2019-08-09,16:00, Break, Break
+2019-08-09,16:30, None, Enock Seth Nyamador - Geo+Python: A Shallow Dive into GIS Development
+2019-08-09,17:00, Erick M'bwana - Unit testing and mocking in Python, Daniel Phiri - Python Powered Disease Classification Web Application
+2019-08-09,17:30, Kojo Idrissa - Keynote, Kojo Idrissa - Keynote
+2019-08-09,18:15, Lightning talks, Lightning talks
+2019-08-09,18:45, Close, Close
+2019-08-10,08:30, Registration, Registration
+2019-08-10,09:00,"Workshops, sprints, tutorials (Programme to be confirmed)","Workshops, sprints, tutorials (Programme to be confirmed)"
