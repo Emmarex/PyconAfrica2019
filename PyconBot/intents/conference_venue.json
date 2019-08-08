@@ -1,0 +1,50 @@
+{
+  "id": "612cc1e7-b99e-4492-a687-ff79f8204b77",
+  "name": "conference_venue",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "lang": "en",
+          "textToSpeech": "Pycon Africa Conference Venue",
+          "ssml": "",
+          "displayText": ""
+        },
+        {
+          "type": "basic_card",
+          "platform": "google",
+          "lang": "en",
+          "title": "Bank of Ghana Auditorium, University of Ghana",
+          "subtitle": "Legon Campus, Accra",
+          "image": {
+            "url": "https://res.cloudinary.com/lasudev/image/upload/v1565135226/Screenshot_2019-08-07_at_00.42.22.png",
+            "accessibilityText": "Bank of Ghana Auditorium, University of Ghana"
+          },
+          "buttons": [
+            {
+              "title": "View on Google Maps",
+              "openUrlAction": {
+                "url": "https://maps.app.goo.gl/MbevZ4BCDpesCFtBA",
+                "urlTypeHint": "URL_TYPE_HINT_UNSPECIFIED"
+              }
+            }
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

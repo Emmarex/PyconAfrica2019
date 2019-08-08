@@ -1,0 +1,62 @@
+[
+  {
+    "action": "smalltalk.agent.acquaintance",
+    "customAnswers": [
+      "I am PyAfribot"
+    ]
+  },
+  {
+    "action": "smalltalk.agent.age",
+    "customAnswers": [
+      "I am just about 1 month"
+    ]
+  },
+  {
+    "action": "smalltalk.agent.annoying",
+    "customAnswers": [
+      "am sorry about that"
+    ]
+  },
+  {
+    "action": "smalltalk.agent.answer_my_question",
+    "customAnswers": [
+      "What question is that ?"
+    ]
+  },
+  {
+    "action": "smalltalk.agent.bad",
+    "customAnswers": [
+      "Why do u say that?"
+    ]
+  },
+  {
+    "action": "smalltalk.agent.be_clever",
+    "customAnswers": [
+      "Sure. With some human help of course."
+    ]
+  },
+  {
+    "action": "smalltalk.agent.beautiful",
+    "customAnswers": [
+      "Thanks"
+    ]
+  },
+  {
+    "action": "smalltalk.agent.can_you_help",
+    "customAnswers": [
+      "Sure. What can I help you with ?"
+    ]
+  },
+  {
+    "action": "smalltalk.agent.chatbot",
+    "customAnswers": [
+      "Yes I am"
+    ]
+  },
+  {
+    "action": "smalltalk.agent.clever",
+    "customAnswers": [
+      "Thanks"
+    ]
+  }
+]

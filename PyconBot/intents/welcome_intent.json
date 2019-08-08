@@ -1,0 +1,68 @@
+{
+  "id": "ca72ed92-4dfd-478a-b5e3-c40c967d33a2",
+  "name": "welcome_intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "I am pyBot, I was built for a demo @ PyconAfrica 2019."
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "How can I help you today ?",
+            "How can I be of help ?"
+          ]
+        },
+        {
+          "type": 0,
+          "platform": "facebook",
+          "lang": "en",
+          "speech": "I am pyBot, I was built for a demo @ PyconAfrica 2019."
+        },
+        {
+          "type": 0,
+          "platform": "facebook",
+          "lang": "en",
+          "speech": [
+            "How can I help you today ?",
+            "How can I be of help ?"
+          ]
+        },
+        {
+          "type": 2,
+          "platform": "facebook",
+          "lang": "en",
+          "title": "About PyconAfrica",
+          "replies": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    },
+    {
+      "name": "FACEBOOK_WELCOME"
+    },
+    {
+      "name": "TELEGRAM_WELCOME"
+    }
+  ]
+}

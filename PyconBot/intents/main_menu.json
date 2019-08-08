@@ -1,0 +1,46 @@
+{
+  "id": "2e022cb0-efd4-41c0-a428-ea3a3a524848",
+  "name": "main_menu",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "lang": "en",
+          "textToSpeech": "Here is what I can help you with ..",
+          "ssml": "",
+          "displayText": ""
+        },
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "lang": "en",
+          "suggestions": [
+            {
+              "title": "About PyconAfrica"
+            },
+            {
+              "title": "Code Of Conduct"
+            },
+            {
+              "title": "Conference Schedule"
+            }
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
