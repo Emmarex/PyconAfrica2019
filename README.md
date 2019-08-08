@@ -9,5 +9,5 @@
 
 # Resources
 
-<a href="https://cloud.google.com/dialogflow/docs/quickstarts">Dialogflow Quickstart</a>
-<a href="https://pypi.org/project/pydialogflow-fulfillment/">PyDialogflow Fulfiment</a>
+1. <a href="https://cloud.google.com/dialogflow/docs/quickstarts">Dialogflow Quickstart</a>
+2. <a href="https://pypi.org/project/pydialogflow-fulfillment/">PyDialogflow Fulfiment</a>
