@@ -9,8 +9,6 @@ flask_app = Flask(__name__)
 CONFERENCE_START_DATE = datetime.strptime('2019-08-06','%Y-%m-%d').date()
 CONFERENCE_END_DATE = datetime.strptime('2019-08-10','%Y-%m-%d').date()
 
-# CONFERENCE_DATE = datetime.strptime('2019-08-08','%Y-%m-%d').date()
-
 GOOGLE_ASSISTANT_WELCOME_INTENT = 'welcome_intent_assistant'
 CONFERENCE_SCHEDULE_INTENT = 'conference_Schedule'
 
@@ -26,7 +24,7 @@ def index():
             response_text = f"Hello {user_data['given_name']}. I am Pycon AfriBot, I was built for a demo @ PyconAfrica 2019."
             dialogflow_response.add(SimpleResponse(response_text,response_text))
             dialogflow_response.add(SimpleResponse("How can I be of help today ?","How can I be of help today ?"))
-            dialogflow_response.add(Suggestions(suggestion_titles=['About PyconAfrica','Conference Schedule']))
+            dialogflow_response.add(Suggestions(suggestion_titles=['About PyconAfrica','Code of Conduct','Conference Schedule']))
             response = flask_app.response_class(response=dialogflow_response.get_final_response(),mimetype='application/json')
         elif dialogflow_intent == CONFERENCE_SCHEDULE_INTENT:
             todays_date = date.today()
