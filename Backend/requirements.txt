@@ -1,4 +1,4 @@
-Flask==1.1.1
+Flask==2.3.2
 pydialogflow-fulfillment==0.0.9
 pandas==0.25.0
 gunicorn==19.9.0
